@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FreshCart Clone - Online Grocery Store</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        /* Smooth transitions for hover effects */
+        .card-hover:hover {
+            border-color: #10b981;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body class="bg-white font-sans text-gray-900">
+
+    <header class="bg-white border-b sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="flex items-center gap-10 flex-1">
+                <h1 class="text-2xl font-bold text-green-600 tracking-tight">FreshCart</h1>
+                <div class="hidden lg:flex bg-gray-100 px-4 py-2.5 rounded-lg w-full max-w-md border border-gray-200">
+                    <input type="text" placeholder="Search for products" class="bg-transparent outline-none w-full text-sm">
+                    <button class="text-gray-500 hover:text-green-600">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+            </div>
+            
+            <div class="flex gap-6 items-center text-gray-700">
+                <div class="hidden sm:block text-sm font-medium hover:text-green-600 cursor-pointer">
+                    <i class="far fa-heart mr-1"></i> Wishlist
+                </div>
+                <div class="text-sm font-medium hover:text-green-600 cursor-pointer">
+                    <i class="far fa-user mr-1"></i> Login
+                </div>
+                <div class="relative cursor-pointer group">
+                    <i class="fas fa-shopping-bag text-xl"></i>
+                    <span class="absolute -top-2 -right-2 bg-green-600 text-white text-[10px] font-bold rounded-full h-5 w-5 flex items-center justify-center border-2 border-white">0</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-4">
+        
+        <section class="my-8">
+            <div class="relative bg-[#F0F3F2] rounded-3xl overflow-hidden h-[450px] flex items-center">
+                <div class="absolute right-0 top-0 h-full w-1/2 bg-cover bg-no-repeat hidden md:block" 
+                     style="background-image: url('https://themewagon.github.io/freshcart/assets/images/slider/slider-1.jpg'); background-position: center right;">
+                </div>
+                
+                <div class="relative z-10 px-8 md:px-16 max-w-2xl">
+                    <span class="bg-yellow-400 text-black text-[10px] font-bold uppercase tracking-wider px-3 py-1 rounded-md">
+                        Exclusive Offer -30%
+                    </span>
+                    <h2 class="text-4xl md:text-6xl font-bold mt-6 mb-4 leading-tight">
+                        Feed your family <br> <span class="text-green-600">the best</span>
+                    </h2>
+                    <p class="text-gray-500 text-lg mb-8 max-w-sm">
+                        Imported fresh fruits from farm to your doorstep. Healthy living starts here.
+                    </p>
+                    <button class="bg-black text-white px-8 py-3.5 rounded-lg font-bold hover:bg-gray-800 transition-all flex items-center gap-2">
+                        Shop Now <i class="fas fa-arrow-right text-xs"></i>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section class="my-16">
+            <h3 class="text-2xl font-bold mb-8">Featured Categories</h3>
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
+                
+                <div class="bg-white p-6 border border-gray-100 rounded-2xl text-center card-hover transition-all cursor-pointer">
+                    <img src="https://themewagon.github.io/freshcart/assets/images/category/category-dairy-bread-eggs.jpg" alt="Dairy" class="mx-auto mb-4 w-24 h-24 object-contain">
+                    <p class="font-semibold text-gray-700 text-sm">Dairy & Bread</p>
+                </div>
+
+                <div class="bg-white p-6 border border-gray-100 rounded-2xl text-center card-hover transition-all cursor-pointer">
+                    <img src="https://themewagon.github.io/freshcart/assets/images/category/category-snack-munchies.jpg" alt="Snacks" class="mx-auto mb-4 w-24 h-24 object-contain">
+                    <p class="font-semibold text-gray-700 text-sm">Snacks</p>
+                </div>
+
+                <div class="bg-white p-6 border border-gray-100 rounded-2xl text-center card-hover transition-all cursor-pointer">
+                    <img src="https://themewagon.github.io/freshcart/assets/images/category/category-bakery-biscuits.jpg" alt="Bakery" class="mx-auto mb-4 w-24 h-24 object-contain">
+                    <p class="font-semibold text-gray-700 text-sm">Bakery</p>
+                </div>
+
+                <div class="bg-white p-6 border border-gray-100 rounded-2xl text-center card-hover transition-all cursor-pointer">
+                    <img src="https://themewagon.github.io/freshcart/assets/images/category/category-instant-food.jpg" alt="Instant" class="mx-auto mb-4 w-24 h-24 object-contain">
+                    <p class="font-semibold text-gray-700 text-sm">Instant Food</p>
+                </div>
+
+                <div class="bg-white p-6 border border-gray-100 rounded-2xl text-center card-hover transition-all cursor-pointer">
+                    <img src="https://themewagon.github.io/freshcart/assets/images/category/category-tea-coffee-drinks.jpg" alt="Drinks" class="mx-auto mb-4 w-24 h-24 object-contain">
+                    <p class="font-semibold text-gray-700 text-sm">Tea & Coffee</p>
+                </div>
+
+                <div class="bg-white p-6 border border-gray-100 rounded-2xl text-center card-hover transition-all cursor-pointer">
+                    <img src="https://themewagon.github.io/freshcart/assets/images/category/category-fruits-vegetables.jpg" alt="Fruits" class="mx-auto mb-4 w-24 h-24 object-contain">
+                    <p class="font-semibold text-gray-700 text-sm">Fruits & Veg</p>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="my-16">
+            <h3 class="text-2xl font-bold mb-8">Popular Products</h3>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6">
+                
+                <div class="bg-white border border-gray-100 rounded-2xl overflow-hidden group hover:border-green-600 transition-all card-hover">
+                    <div class="p-4 relative">
+                        <img src="https://themewagon.github.io/freshcart/assets/images/products/product-img-1.jpg" alt="Product" class="w-full h-44 object-contain group-hover:scale-105 transition-transform">
+                        <button class="absolute top-4 right-4 text-gray-300 hover:text-red-500 bg-white shadow-sm p-1.5 rounded-full"><i class="far fa-heart"></i></button>
+                    </div>
+                    <div class="p-5 pt-0">
+                        <span class="text-[10px] text-gray-400 font-bold uppercase tracking-wider">Fruits & Vegetables</span>
+                        <h4 class="font-bold text-sm h-10 mt-1 hover:text-green-600 cursor-pointer">Banana (Organic)</h4>
+                        <div class="flex items-center mt-2 text-yellow-400 text-[10px]">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt text-gray-300"></i>
+                            <span class="text-gray-400 ml-1 font-medium">(4.5)</span>
+                        </div>
+                        <div class="flex justify-between items-center mt-4">
+                            <span class="font-bold text-lg text-gray-900">$12.00</span>
+                            <button class="bg-green-600 text-white px-4 py-1.5 rounded-lg text-sm font-bold hover:bg-green-700 transition flex items-center gap-1">
+                                <i class="fas fa-plus text-[10px]"></i> Add
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-50 border-t mt-20 pt-16 pb-12">
+        <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-12">
+            <div class="col-span-1 md:col-span-1">
+                <h1 class="text-2xl font-bold text-green-600 mb-6">FreshCart</h1>
+                <p class="text-gray-500 text-sm leading-relaxed mb-6">Your one-stop shop for fresh groceries delivered to your door. Quality you can taste, service you can trust.</p>
+                <div class="flex gap-4">
+                    <i class="fab fa-facebook text-gray-400 hover:text-green-600 cursor-pointer"></i>
+                    <i class="fab fa-instagram text-gray-400 hover:text-green-600 cursor-pointer"></i>
+                    <i class="fab fa-twitter text-gray-400 hover:text-green-600 cursor-pointer"></i>
+                </div>
+            </div>
+            
+            <div>
+                <h5 class="font-bold mb-6 text-gray-800">Get to know us</h5>
+                <ul class="text-gray-500 text-sm space-y-3">
+                    <li><a href="#" class="hover:text-green-600 transition">Company</a></li>
+                    <li><a href="#" class="hover:text-green-600 transition">About</a></li>
+                    <li><a href="#" class="hover:text-green-600 transition">Blog</a></li>
+                    <li><a href="#" class="hover:text-green-600 transition">Help Center</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h5 class="font-bold mb-6 text-gray-800">Categories</h5>
+                <ul class="text-gray-500 text-sm space-y-3">
+                    <li><a href="#" class="hover:text-green-600 transition">Vegetables & Fruits</a></li>
+                    <li><a href="#" class="hover:text-green-600 transition">Breakfast & Dairy</a></li>
+                    <li><a href="#" class="hover:text-green-600 transition">Soft Drinks</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h5 class="font-bold mb-6 text-gray-800">Support</h5>
+                <ul class="text-gray-500 text-sm space-y-3">
+                    <li><a href="#" class="hover:text-green-600 transition">Payments</a></li>
+                    <li><a href="#" class="hover:text-green-600 transition">Shipping</a></li>
+                    <li><a href="#" class="hover:text-green-600 transition">Returns</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="max-w-7xl mx-auto px-4 mt-16 pt-8 border-t text-center md:text-left flex flex-col md:flex-row justify-between items-center text-gray-400 text-xs">
+            <p>&copy; 2024 FreshCart Clone. Built with Tailwind CSS.</p>
+            <div class="mt-4 md:mt-0 flex gap-4">
+                <i class="fab fa-cc-visa text-2xl"></i>
+                <i class="fab fa-cc-mastercard text-2xl"></i>
+                <i class="fab fa-cc-paypal text-2xl"></i>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
